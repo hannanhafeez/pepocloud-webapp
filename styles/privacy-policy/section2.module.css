@@ -1,0 +1,41 @@
+.section2{
+	@apply container py-10 ;
+}
+
+.section2_container{
+	@apply rounded-lg mx-auto flex flex-col gap-y-14;
+}
+
+.data_container{
+	@apply flex flex-col sm:flex-row gap-8;
+}
+
+.data_container > div:first-child {
+	@apply flex-1 ;
+}
+.data_container > div:first-child > h3 {
+	@apply text-24 font-sans-bold text-darker ;
+}
+
+
+
+.data_container > div:last-child {
+	@apply flex-[2] space-y-4 text-justify;
+}
+
+.data_container > div:last-child > h4 {
+	@apply text-18 font-sans-semibold text-darker;
+}
+.data_container > div:last-child > p {
+	@apply text-17 font-sans-medium text-dark;
+}
+.data_container > div:last-child > ul {
+	@apply text-17 font-sans-medium text-dark list-disc;
+}
+
+
+.data_container > div:last-child a {
+	@apply underline text-blue-500;
+	word-wrap: break-word;
+}
+

@@ -1,0 +1,47 @@
+.section_heading_small{
+	@apply font-sans-medium text-base text-app_green;
+}
+.section_heading{
+	@apply font-sans-bold text-4xl 2xl:text-5xl text-center;
+}
+
+.scrollContainer{
+	scrollbar-width: thin;
+	/* "auto" or "thin" */
+	scrollbar-color: #00000011 #00000011;
+	/* scroll thumb and track */
+	@apply overflow-y-auto w-full flex snap-x snap-mandatory;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.scrollContainer::-webkit-scrollbar {
+	height: 5px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+	background: #00000011;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+	background-color: #00000011;
+	border-radius: 4px;
+	/* border: 0px solid #00000011; */
+}
+
+.testimonial_card{
+	@apply self-stretch bg-footer_grey p-12 2xl:p-20 min-h-[500px] grid place-content-center min-w-full snap-center snap-always;
+}
+
+.testimonial_card_inner{
+	background: no-repeat url('/svg/quote-start.svg'), no-repeat url('/svg/quote-end.svg') bottom right;
+
+	@apply w-full flex flex-col justify-center items-center gap-4 md:px-16;
+}
+.testimonial_card_inner p{
+	@apply font-sans-semibold text-24 text-center text-dark;
+}
+
+.testimonial_card_inner svg {
+	@apply fill-current;
+}
+

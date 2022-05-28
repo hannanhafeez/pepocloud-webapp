@@ -1,0 +1,28 @@
+
+.list_style {
+	@apply text-[15px] 2xl:text-[17px] font-sans-medium list-none list-outside ml-4;
+}
+
+.list_style li{
+	@apply my-2;
+}
+
+.list_style li::before {
+	@apply text-app_green;
+	content: "●";
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.section1_buttom_item{
+	@apply flex-shrink-0 inline-flex gap-x-3 items-center;
+}
+.section1_buttom_item h5{
+	@apply flex-shrink-0 font-sans-bold text-xl md:text-2xl 2xl:text-[30px] text-highlight_blue;
+}
+
+.section1_buttom_item span{
+	@apply inline flex-grow-0 font-sans-medium text-14 2xl:text-17;
+}

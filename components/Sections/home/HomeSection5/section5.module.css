@@ -1,0 +1,76 @@
+/* Table Header */
+.tableHeader{
+	@apply bg-app_light_green font-sans-medium text-[18px] 2xl:text-[22px];
+}
+
+.tableHeader tr th:first-child{
+	@apply px-4;
+}
+.tableHeader tr th:last-child{
+	@apply pr-4 flex items-center justify-center;
+}
+.tableHeader tr th {
+	@apply py-4 text-center;
+}
+.tableHeader tr th:nth-child(2),
+.tableHeader tr th:nth-child(3) {
+	@apply text-left;
+}
+
+
+/* Table Footer */
+.tableFooter {
+	@apply bg-app_light_green font-sans-medium text-[18px] 2xl:text-[22px];
+}
+
+.tableFooter tr td:first-child {
+	@apply px-4;
+}
+
+.tableFooter tr td:last-child {
+	@apply pr-4;
+}
+
+.tableFooter tr td {
+	@apply py-4 text-center;
+}
+
+.tableFooter tr td:nth-child(2),
+.tableFooter tr td:nth-child(3) {
+	@apply text-left;
+}
+
+
+
+/* Table Body */
+.tableBody {
+	@apply font-sans-regular text-14 2xl:text-17 divide-y divide-gray-200;
+}
+
+.tableBody tr td:first-child{
+	@apply px-4 flex justify-center items-center gap-x-4;
+}
+
+.tableBody tr td:first-child div{
+	@apply w-10 h-10 rounded-[50%] shadow-lg;
+}
+
+.tableBody tr td:last-child{
+	@apply pr-4 flex items-center justify-center;
+}
+.tableBody tr td {
+	@apply py-4 text-center;
+}
+
+.tableBody tr td:nth-child(2),
+.tableBody tr td:nth-child(3) {
+	@apply text-left;
+}
+
+
+/* Common */
+.tableHeader tr th,
+.tableBody 	 tr td,
+.tableFooter tr td{
+	@apply min-w-[140px];
+}

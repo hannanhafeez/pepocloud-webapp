@@ -1,0 +1,6 @@
+.brand_img_parent{
+	@apply relative w-auto mt-8 flex items-center justify-center flex-wrap gap-x-4 sm:gap-x-6;
+}
+.brand_img_style{
+	@apply min-w-[200px] flex-shrink-0 flex-grow-0;
+}

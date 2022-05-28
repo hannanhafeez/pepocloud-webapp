@@ -1,0 +1,3 @@
+.section_heading{
+	@apply font-sans-bold text-3xl md:text-4xl 2xl:text-5xl;
+}

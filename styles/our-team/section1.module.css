@@ -1,0 +1,11 @@
+.section1_blue_overlay{
+	@apply absolute top-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-80;
+}
+
+.text_container{
+	@apply container relative mx-auto min-h-[350px] px-6 py-10 md:py-[7.5rem] lg:py-20 gap-x-4 text-center flex flex-col justify-center items-center gap-4 sm:gap-10;
+}
+
+.text_container > h2{
+	@apply font-sans-bold text-[40px] text-white sm:text-[60px] leading-[45px] sm:leading-[70px] self-stretch;
+}

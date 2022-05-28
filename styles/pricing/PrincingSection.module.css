@@ -1,0 +1,94 @@
+.pricing_container{
+	@apply w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 2xl:gap-6;
+}
+
+.pricing_card{  /* Princing Card */
+	@apply 	relative ring-2 ring-gray-100 rounded-md px-6 py-8 pt-12
+			flex flex-col items-center gap-6
+			hover:z-[5];
+}
+
+
+.pricing_card_popular_tag{
+	@apply 	absolute rounded-t-md py-2 w-full bg-highlight_blue top-0 text-center;
+}
+
+.pricing_card_popular_tag h5{
+	@apply font-sans-semibold text-17 text-white;
+}
+
+/* Card Upper Half */
+
+	.card_upper_half{  /* Princing Card */
+		@apply flex flex-col self-stretch items-center gap-6;
+	}
+
+
+	.card_upper_half > h4{  /* Princing Card */
+		@apply font-sans-bold text-20;
+	}
+
+	.price{
+		@apply stats bg-[#2ADC6522] rounded-3xl min-w-[70%];
+	}
+
+	.price p{
+		@apply font-sans-bold text-app_blue text-[30px];
+	}
+	.price p>span{
+		@apply font-sans-medium text-17;
+	}
+
+	.pricing_button_container {
+		@apply self-stretch flex flex-col gap-2;
+	}
+
+	.pricing_button_container button {
+		@apply 	px-6 py-4 leading-none rounded-lg
+				text-white bg-app_green
+				mt-4 lg:mt-0
+				font-sans-semibold text-17;
+	}
+
+	.pricing_button_container p {
+		@apply 	text-gray-400
+				mt-4 lg:mt-0
+				font-sans-regular text-12;
+	}
+
+/* Card Upper Half */
+
+
+
+.pricing_container .vertical_dash_separator{
+	@apply self-stretch border-t-2 border-dashed border-gray-200 -mx-6;
+}
+
+
+
+/* Card Lower Half */
+
+	.card_lower_half{
+		@apply flex flex-col self-stretch gap-2;
+	}
+	.card_lower_half table{
+		@apply text-left;
+	}
+
+	.card_lower_half th{
+		@apply font-sans-medium text-14;
+	}
+
+
+	.card_lower_half td{
+		@apply  font-sans-regular text-14;
+	}
+	.card_lower_half :is(td, th):last-child{
+		@apply  pl-3 py-2;
+	}
+
+	.card_lower_half td svg{
+		display: inline;
+	}
+
+/* Card Lower Half */

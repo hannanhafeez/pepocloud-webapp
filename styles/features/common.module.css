@@ -1,0 +1,21 @@
+/* Feature common sections */
+
+.section_heading{
+	@apply font-sans-bold text-5xl;
+}
+
+.section_card{
+	@apply xs:flex-[calc(50%-32px)] xs:max-w-[50%] flex flex-col gap-y-4;
+}
+.section_card div{
+	@apply self-start h-[35px] w-[40px];
+}
+
+.section_card h3{
+	@apply font-sans-bold text-24 text-darker;
+}
+.section_card p{
+	@apply font-sans-regular text-17 text-dark;
+}
+
+/* Feature common sections */

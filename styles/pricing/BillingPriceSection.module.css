@@ -1,0 +1,134 @@
+.tableStyle{
+	@apply w-full text-left;
+}
+
+/* --------------------------------------------------- */
+.tableStyle {
+	--first-cell-width : 260px;
+}
+
+/* Table Header */
+
+	.tableStyle thead{
+		@apply w-full bg-section_grey;
+	}
+
+	.tableStyle thead tr{
+		@apply table container mx-auto text-darker text-center;
+	}
+
+	.tableStyle thead tr th:first-child{
+		@apply text-left w-max min-w-[var(--first-cell-width)] lg:pl-20;
+	}
+	.tableStyle .toggleContainer label{
+		@apply justify-start;
+	}
+
+	.tableStyle thead tr th:not(:first-child){
+		@apply min-w-[120px] w-[15%];
+	}
+
+
+	.tableStyle thead tr th{
+		@apply py-5;
+	}
+	.tableStyle thead tr th h3{
+		@apply font-sans-semibold text-20 mb-4;
+	}
+
+	.price {
+		@apply min-w-[70%];
+	}
+
+	.price p {
+		@apply font-sans-bold text-app_blue text-[30px];
+	}
+
+	.price p>span {
+		@apply font-sans-medium text-17;
+	}
+
+/* Table Header */
+
+
+/* --------------------------------------------------- */
+
+
+/* Table Body */
+
+.tableStyle tbody {
+	@apply w-full;
+}
+
+.tableStyle tbody tr {
+	@apply border-b-[1px] border-[#E7E7E7];
+}
+
+.tableStyle tbody .subheadingRow {
+	@apply border-[#A9A9A9];
+}
+.tableStyle tbody .subheadingRow td{
+	@apply py-6 pt-10 font-sans-semibold text-20;
+}
+
+.tableStyle tbody tr,
+.tableStyle tbody .subheadingRow {
+	@apply table container mx-auto text-darker text-center;
+}
+
+
+.tableStyle tbody tr td {
+	@apply py-6 font-sans-regular text-17;
+}
+
+.tableStyle tbody tr td svg{
+	@apply inline ;
+}
+
+.tableStyle tbody tr td:first-child {
+	@apply min-w-[var(--first-cell-width)] text-left whitespace-normal lg:pl-20;
+}
+
+
+.tableStyle tbody tr td:not(:first-child) {
+	@apply min-w-[120px] w-[15%] text-app_green;
+}
+
+
+/* Table Body */
+
+/* --------------------------------------------------- */
+
+
+/* Table Footer */
+
+.tableStyle tfoot {
+	@apply w-full;
+}
+
+.tableStyle tfoot tr {
+	@apply table container mx-auto text-darker text-center;
+}
+
+.tableStyle tfoot tr td:first-child {
+	@apply text-left w-max min-w-[var(--first-cell-width)];
+}
+
+
+.tableStyle .toggleContainer label {
+	@apply justify-start;
+}
+
+.tableStyle tfoot tr td:not(:first-child) {
+	@apply min-w-[120px] w-[15%];
+}
+
+
+.tableStyle tfoot tr td {
+	@apply py-2 md:py-5;
+}
+.tableStyle tfoot tr td button{
+	@apply w-full h-full px-2 py-2 md:py-4 rounded-lg text-white bg-app_green mt-4 lg:mt-0 font-sans-semibold text-13 md:text-15 2xl:text-17 whitespace-normal;
+}
+
+/* Table Footer */

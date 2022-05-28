@@ -1,0 +1,45 @@
+.vertical_section{
+	@apply flex flex-col gap-4;
+}
+
+.vertical_section h2{
+	@apply font-sans-bold text-app_blue text-24;
+}
+
+.vertical_section ul{
+	@apply flex flex-col gap-3;
+}
+
+.vertical_section ul li{
+	@apply font-sans-medium text-base;
+}
+
+
+
+.input_container{
+	@apply 	flex flex-row rounded-lg overflow-hidden border-app_green border-[1px]
+			lg:self-stretch;
+}
+
+.input_container input{
+	@apply bg-transparent px-4 placeholder:text-[#606C80] font-sans-medium text-base
+			py-3;
+}
+
+.input_container button{
+	@apply self-stretch bg-app_green text-white font-sans-bold px-5;
+}
+
+
+.social_link_container{
+	@apply flex-grow flex justify-end items-center gap-4;
+}
+
+
+.bottom_link_container{
+	@apply flex gap-x-7 gap-y-4 flex-wrap mt-4 py-5;
+}
+
+.bottom_link_container a{
+	@apply font-sans-medium text-15 text-dark
+}

@@ -1,0 +1,53 @@
+.section_heading{
+	@apply font-sans-bold text-4xl 2xl:text-5xl md:w-1/2 lg:w-1/2;
+}
+
+.section_card{
+	@apply 	px-4 py-8 ring-[1.1px] ring-gray-200 rounded-md flex flex-col items-center justify-between text-center gap-6
+			hover:bg-app_green hover:ring-0
+			transition-all duration-300;
+}
+
+.section_card h3,
+.section_card p {
+	@apply text-app_blue;
+}
+
+.section_card:hover h3, .section_card:hover p {
+	color:white;
+}
+
+.section_card div:first-child{
+	@apply relative aspect-square w-[82px] rounded-full bg-[rgba(42,220,101,0.2)] overflow-hidden grid place-content-center;
+}
+
+.section_card:hover div:first-child{
+	background: #fff !important; 
+	opacity: 0.9 !important;
+}
+
+.section_card h3{
+	@apply font-sans-bold text-24;
+}
+
+.section_card p{
+	@apply font-sans-regular text-17;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+
+.section_card button{
+	@apply 	font-sans-medium text-17 text-white bg-app_green rounded-md py-3 px-4
+			flex items-center gap-3
+	;
+}
+.section_card button svg{
+	@apply fill-current;
+}
+
+.section_card:hover button{
+	@apply text-app_green bg-white;
+}

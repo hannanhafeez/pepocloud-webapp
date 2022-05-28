@@ -1,0 +1,22 @@
+.section2{
+	@apply container pt-10 md:pt-[7.5rem] lg:pt-20;
+}
+
+.section2_container{
+	@apply relative -top-20 md:-top-40 lg:-top-28 rounded-lg bg-section_grey mx-auto px-8 py-12 gap-x-4 -mb-4 md:-mb-16 lg:-mb-4;
+}
+
+.text_container{
+	@apply mb-4;
+}
+
+.text_container h3{
+	@apply font-sans-bold text-18 leading-7;
+}
+.text_container p{
+	@apply font-sans-regular text-17 mb-3;
+}
+
+ :is(.text_container, .text_container > p):last-child {
+	@apply mb-0;
+}

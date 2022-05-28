@@ -1,0 +1,21 @@
+
+/* Home Unordered list style */
+
+.list_style {
+	@apply text-[15px] md:text-[16px] 2xl:text-[17px] font-sans-medium list-none list-outside ml-4;
+}
+
+.list_style li{
+	@apply my-2;
+}
+
+.list_style li::before {
+	@apply text-app_green;
+	content: "●";
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+/* Home Unordered list style */

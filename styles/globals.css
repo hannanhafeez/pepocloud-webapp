@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: 'Gilroy-Light';
+    src: url(/fonts/Gilroy/Gilroy-Light.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(/fonts/Gilroy/Gilroy-Regular.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(/fonts/Gilroy/Gilroy-Medium.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url(/fonts/Gilroy/Gilroy-SemiBold.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(/fonts/Gilroy/Gilroy-Bold.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url(/fonts/Gilroy/Gilroy-ExtraBold.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Gilroy-Black';
+    src: url(/fonts/Gilroy/Gilroy-Black.woff) format('woff');
+    font-display: swap;
+  }
+}
+
+@layer utilities {
+  .corner-fix {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

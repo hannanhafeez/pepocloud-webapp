@@ -1,0 +1,4 @@
+.card_shadow{
+	@apply inline-flex w-full max-w-full md:max-w-[calc(50%-40px)] lg:max-w-[calc(35%-40px)] overflow-hidden rounded my-3 mr-0 sm:mr-4 min-h-[180px];
+	box-shadow: 0px 10px 40px rgba(125, 143, 178, 0.2);
+}
